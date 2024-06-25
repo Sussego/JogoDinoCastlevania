@@ -115,8 +115,8 @@ function detectCollision() {
             dino.y + dino.height > obstacle.y
         ) {
             // Colisão detectada
-            gameOver = true;
             ambientSound.pause();
+            gameOver = true;
             failSound.currentTime = 0; // Reinicia o som
             failSound.play();
             alert('Game Over! Score: ' + score);
