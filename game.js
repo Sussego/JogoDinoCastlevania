@@ -88,7 +88,7 @@ function updateObstacles() {
         obstacle.x -= gameSpeed;
     });
 
-    if (obstacles.length === 0 || obstacles[obstacles.length - 1].x < canvas.width - randomIntFromRange(300, 600)) {
+    if (obstacles.length === 0 || obstacles[obstacles.length - 1].x < canvas.width - randomIntFromRange(200, 600)) {
         let obstacle = {
             x: canvas.width,
             y: canvas.height - 50, // Altura fixa para todos os obstáculos
